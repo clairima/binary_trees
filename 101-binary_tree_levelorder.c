@@ -44,7 +44,8 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
  * @func: Pointer to a function to call for each node's value
  * @level: The current level being visited
  */
-void level_order_helper(const binary_tree_t *tree, void (*func)(int), int level)
+void level_order_helper(const binary_tree_t *tree,
+	void (*func)(int), int level)
 {
 	if (tree == NULL)
 		return;

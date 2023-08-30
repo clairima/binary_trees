@@ -66,5 +66,6 @@ heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
 void level_order_helper(const binary_tree_t *tree, void (*func)(int), int level);
+int is_complete_recursive(const binary_tree_t *tree, size_t index, size_t nodes);
 
 #endif
